@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    <h1>this is home page</h1>
+    <h1>autor:{{autor}}</h1>
+    <h1>age:{{age}}</h1>
+    <h1>lst:{{lst}}</h1>
+
+
+   {% comment %} conditional statement {% endcomment %}
+   {% if age >= 20 %}
+        <h4>you will get driving licence</h4>
+   {% elif age >= 10 and age <= 19%}
+        <h4>you will not get driving licence</h4>
+   {%else%}
+        <h4>you are a child</h4>
+   {%endif%}
+
+   {{lst}}
+   <h1>{{ birthday | date:"D d M Y" }}</h1>
+   <h1>{{ lst | join:" - " }} </h1>
+   {% comment %} for loop {% endcomment %}
+   {%for i in courses%}
+   <h4>{{i.id}}{{i.name}}</h4>
+   {%endfor%}
+
+</body>
+
+
+
+
+</html>
