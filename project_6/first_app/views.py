@@ -1,4 +1,5 @@
 from django.shortcuts import render
+
 def index(request):
     data = [
         {
@@ -33,6 +34,7 @@ def index(request):
         }
     ]
     return render(request, 'index.html', {'data': data})
+
 def about(request):
-    
-    return render(request,'index.html',{'id':id})
+    print(request.GET.get('id'))
+    return render(request, 'index.html', {'id': id})
