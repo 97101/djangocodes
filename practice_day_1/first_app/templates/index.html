@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+
+<body>
+    <h1>This is homepage </h1>
+    
+    <p>Arif: {{ data.arif }}</p>
+    <p>Numbers:  {{ data | join:" // " }} </p>
+    <p>Current Date: {{ data.current_date | date:"D d M Y" }}</p>
+    {{ data | time:"H:i" }}
+    <p>N:{{data.x | divisibleby:"3"}}</p>
+    {{ data | length }}
+    {{ data | linenumbers }}
+    {{ data.arif | lower }}
+    {{ data.da | random }}
+    {{ data.da | slice:":2" }}
+    <p>Current Time: {{ data | time:"H:i" }}</p>
+    {{ data.arif | upper }}
+    {{ data.arif | wordcount }}
+    {{ data.a | cut:" " }}.
+    {{ data.a | join:" - " }} 
+    {{ data.x | add:"5" }}
+    {{ data.current_date|date:"SHORT_DATE_FORMAT" }}
+    
+</body>
+
+
+
+
+</html>

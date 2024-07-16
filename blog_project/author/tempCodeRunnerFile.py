@@ -1,0 +1,1 @@
+author=models.ForeignKey(author,on_delete=models.CASCADE)
